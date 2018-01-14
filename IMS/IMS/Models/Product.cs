@@ -16,6 +16,6 @@ namespace IMS.Models
         public double BulkPrice { get; set; }
         public double DiscountPrice { get; set; }
         public string Location { get; set; }
-        public int Quantituy { get; set; }
+        public int Quantity { get; set; }
     }
 }
