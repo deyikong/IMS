@@ -69,3 +69,5 @@ C:\Users\Deyi Kong\Desktop\IMS\IMS\IMS\obj\Debug\IMS.csprojResolveAssemblyRefere
 C:\Users\Deyi Kong\Desktop\IMS\IMS\IMS\obj\Debug\IMS.csproj.CoreCompileInputs.cache
 C:\Users\Deyi Kong\Desktop\IMS\IMS\IMS\obj\Debug\IMS.dll
 C:\Users\Deyi Kong\Desktop\IMS\IMS\IMS\obj\Debug\IMS.pdb
+E:\FullStack-NS\SourceTree\IMS\IMS\obj\Debug\IMS.csprojResolveAssemblyReference.cache
+E:\FullStack-NS\SourceTree\IMS\IMS\obj\Debug\IMS.csproj.CoreCompileInputs.cache
