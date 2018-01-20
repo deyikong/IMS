@@ -18,6 +18,5 @@ namespace IMS.Models
         public virtual Type Type { get; set; }
         public virtual Category Category { get; set; }
 
-
     }
 }

@@ -13,6 +13,5 @@ namespace IMS.Models
         public int CurrencyId { get; set; }
 
         public virtual Currency Currency { get; set; }
-
     }
 }
