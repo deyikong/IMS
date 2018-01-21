@@ -44,3 +44,5 @@ E:\FullStack-NS\SourceTree\IMS\IMS\IMS\bin\EntityFramework.dll
 E:\FullStack-NS\SourceTree\IMS\IMS\IMS\bin\EntityFramework.SqlServer.dll
 E:\FullStack-NS\SourceTree\IMS\IMS\IMS\bin\EntityFramework.xml
 E:\FullStack-NS\SourceTree\IMS\IMS\IMS\bin\EntityFramework.SqlServer.xml
+C:\Users\deyik\Documents\IMS-1\Sun_Nan\IMS\IMS\obj\Debug\IMS.csprojResolveAssemblyReference.cache
+C:\Users\deyik\Documents\IMS-1\Sun_Nan\IMS\IMS\obj\Debug\IMS.csproj.CoreCompileInputs.cache
