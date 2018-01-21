@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using IMS.DAL;
 using IMS.Models;
+using IMS.ViewModels;
 
 namespace IMS.Controllers
 {
@@ -15,11 +16,18 @@ namespace IMS.Controllers
     {
         private IMSContext db = new IMSContext();
 
-        // GET: Currencies
         public ActionResult Index()
         {
-            return View(db.Currencies.ToList());
+            CurrencyIndexViewModel currencyIndexViewModel = new CurrencyIndexViewModel();
+            currencyIndexViewModel.Currencies = db.Currencies.ToList();
+            return View(currencyIndexViewModel);
         }
+        // GET: Currencies
+
+        //public ActionResult Index()
+        //{
+        //    return View(db.Currencies.ToList());
+        //}
 
         // GET: Currencies/Details/5
         public ActionResult Details(int? id)
