@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using IMS.DAL;
 using IMS.Models;
+using IMS.ViewModels;
+
 
 namespace IMS.Controllers
 {
@@ -15,11 +17,18 @@ namespace IMS.Controllers
     {
         private IMSContext db = new IMSContext();
 
-        // GET: Locations
         public ActionResult Index()
         {
-            return View(db.Locations.ToList());
+            LocationIndexViewModel locationIndexViewModel = new LocationIndexViewModel();
+            locationIndexViewModel.Locations = db.Locations.ToList();
+            return View(locationIndexViewModel);
         }
+
+        // GET: Locations
+        //public ActionResult Index()
+        //{
+        //    return View(db.Locations.ToList());
+        //}
 
         // GET: Locations/Details/5
         public ActionResult Details(int? id)
