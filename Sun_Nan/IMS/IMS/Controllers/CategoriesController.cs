@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using IMS.DAL;
 using IMS.Models;
+using IMS.ViewModels;
+
 
 namespace IMS.Controllers
 {
@@ -15,11 +13,19 @@ namespace IMS.Controllers
     {
         private IMSContext db = new IMSContext();
 
-        // GET: Categories
         public ActionResult Index()
         {
-            return View(db.Categories.ToList());
+            CategoryIndexViewModel categoryIndexViewModel = new CategoryIndexViewModel();
+            categoryIndexViewModel.Categories = db.Categories.ToList();
+            return View(categoryIndexViewModel);
         }
+
+
+        // GET: Categories
+        //public ActionResult Index()
+        //{
+        //    return View(db.Categories.ToList());
+        //}
 
         // GET: Categories/Details/5
         public ActionResult Details(int? id)
@@ -47,7 +53,7 @@ namespace IMS.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Description")] Category category)
+        public ActionResult Create([Bind(Include = "Id,Name,Description")] Models.Category category)
         {
             if (ModelState.IsValid)
             {
