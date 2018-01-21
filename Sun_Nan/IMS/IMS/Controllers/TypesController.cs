@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using IMS.DAL;
 using IMS.Models;
+using IMS.ViewModels;
 
 namespace IMS.Controllers
 {
@@ -18,8 +19,16 @@ namespace IMS.Controllers
         // GET: Types
         public ActionResult Index()
         {
-            return View(db.Types.ToList());
+            TypeIndexViewModel typeIndexViewModel = new TypeIndexViewModel();
+            typeIndexViewModel.Types = db.Types.ToList();
+            return View(typeIndexViewModel);
         }
+
+        //// GET: Types
+        //public ActionResult Index()
+        //{
+        //    return View(db.Types.ToList());
+        //}
 
         // GET: Types/Details/5
         public ActionResult Details(int? id)

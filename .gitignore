@@ -1,4 +1,4 @@
-
+﻿
 ###################
 # compiled source #
 ###################
@@ -23,6 +23,7 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
+.vs/
 bin/
 obj/
 TestResults/
